@@ -79,6 +79,8 @@ export const SearchBox = (props) => {
             , { 
                 // refs:
                 elmRef: inputRef, 
+                // classes:
+                className: 'fluid', 
                 // values:
                 value: search, onChange: ({ target: { value } }) => setSearch(value), 
                 // formats:
@@ -88,6 +90,8 @@ export const SearchBox = (props) => {
             , { 
                 // appearances:
                 icon: 'search', 
+                // classes:
+                className: 'solid', 
                 // behaviors:
                 type: 'submit', 
                 // handlers:
@@ -95,6 +99,8 @@ export const SearchBox = (props) => {
             !!options.length && React.createElement(DropdownListButton
             // variants:
             , { ...basicVariantProps, 
+                // classes:
+                className: 'solid', 
                 // floatable:
                 floatingPlacement: 'bottom-end' }, options.map((opt, index) => React.createElement(ListItem
             // identifiers:
