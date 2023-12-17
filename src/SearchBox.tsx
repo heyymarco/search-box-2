@@ -169,6 +169,11 @@ export const SearchBox = (props: SearchBoxProps): JSX.Element|null => {
                     
                     
                     
+                    // classes:
+                    className='fluid'
+                    
+                    
+                    
                     // values:
                     value={search}
                     onChange={({target: {value}}) => setSearch(value)}
@@ -181,6 +186,11 @@ export const SearchBox = (props: SearchBoxProps): JSX.Element|null => {
                 <ButtonIcon
                     // appearances:
                     icon='search'
+                    
+                    
+                    
+                    // classes:
+                    className='solid'
                     
                     
                     
@@ -197,6 +207,11 @@ export const SearchBox = (props: SearchBoxProps): JSX.Element|null => {
                 {!!options.length && <DropdownListButton
                     // variants:
                     {...basicVariantProps}
+                    
+                    
+                    
+                    // classes:
+                    className='solid'
                     
                     
                     
